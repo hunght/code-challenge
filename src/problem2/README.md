@@ -1,6 +1,8 @@
 # Currency Swap Form
 
 A modern, interactive currency swap interface built with vanilla JavaScript, featuring real-time price data, token selection, and a polished user experience.
+Demo: https://www.loom.com/share/4380fea65c204f989e179a4f891b78b4?sid=174f85e0-230d-4788-9690-726c9037f854
+
 
 ## 🚀 Features
 
@@ -147,14 +149,5 @@ Potential improvements for production use:
 - DeFi protocol integration
 - Advanced charting and analytics
 
-## 📄 License
 
-MIT License - feel free to use this project as a reference or starting point for your own implementations.
 
-## 🤝 Contributing
-
-This is a demonstration project for the Switcheo interview process. The code is provided as-is for evaluation purposes.
-
----
-
-Built with ❤️ using modern web technologies and best practices.
