@@ -1,0 +1,17 @@
+{
+  "name": "currency-swap-form",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": ["currency", "swap", "crypto", "exchange"],
+  "author": "",
+  "license": "ISC",
+  "description": "Interactive currency swap form with real-time price data",
+  "devDependencies": {
+    "vite": "^7.1.7"
+  }
+}
