@@ -1,0 +1,34 @@
+/* Accessibility and Focus Styles */
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .floating-shape {
+    animation: none;
+  }
+}
+
+/* Focus styles for keyboard navigation */
+button:focus,
+input:focus,
+.selected-token:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --card-bg: var(--white);
+    --gray-50: var(--gray-100);
+  }
+
+  .token-section {
+    border: 2px solid var(--gray-300);
+  }
+}

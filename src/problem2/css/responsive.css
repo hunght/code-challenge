@@ -1,0 +1,64 @@
+/* Responsive Design */
+
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
+  .header-content {
+    padding: 0 1rem;
+  }
+
+  .header-stats {
+    display: none;
+  }
+
+  .swap-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .input-container {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .selected-token {
+    min-width: auto;
+  }
+
+  .amount-input {
+    text-align: left;
+    font-size: var(--font-size-xl);
+  }
+
+  .modal {
+    width: 95%;
+    margin: 1rem;
+  }
+
+  .slippage-options {
+    justify-content: center;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .swap-container {
+    padding: 1rem;
+  }
+
+  .token-section {
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: var(--font-size-xl);
+  }
+
+  .swap-header h2 {
+    font-size: var(--font-size-xl);
+  }
+
+  .amount-input {
+    font-size: var(--font-size-lg);
+  }
+}

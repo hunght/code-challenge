@@ -135,26 +135,24 @@ describe('getMockBalance', () => {
   });
 
   it('returns predefined balance for known tokens', () => {
-    expect(getMockBalance('ETH')).toBe(3);
+    expect(getMockBalance('ETH')).toBe(2.5);
     expect(getMockBalance('USDC')).toBe(3500);
     expect(getMockBalance('USDT')).toBe(2800);
     expect(getMockBalance('WBTC')).toBeCloseTo(0.15, 2);
     expect(getMockBalance('SWTH')).toBe(35000);
   });
 
-  it('returns random balance for unknown tokens', () => {
-    const balance = getMockBalance('UNKNOWN');
-    expect(balance).toBeGreaterThan(0);
-    expect(balance).toBeLessThan(1000);
+  it('returns fixed balance for unknown tokens', () => {
+    expect(getMockBalance('UNKNOWN')).toBe(500);
   });
 
-  it('returns different values for unknown tokens on multiple calls', () => {
-    // Test that random values are different by calling multiple times
+  it('returns consistent values for unknown tokens on multiple calls', () => {
+    // Test that fixed values are consistent by calling multiple times
     const balances = new Set();
     for (let i = 0; i < 10; i++) {
       balances.add(getMockBalance('UNKNOWN'));
     }
-    // The mock returns 100 for unknown tokens, so all values will be the same
+    // The mock returns 500 for unknown tokens, so all values will be the same
     // This test verifies the function works consistently
     expect(balances.size).toBe(1);
     expect(Array.from(balances)[0]).toBe(500);

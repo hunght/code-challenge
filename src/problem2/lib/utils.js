@@ -37,11 +37,11 @@ export function calculateTotalVolume() {
 
 export function getMockBalance(symbol) {
   const balances = {
-    ETH: 1.5 + Math.random() * 3,
-    USDC: 1000 + Math.random() * 5000,
-    USDT: 800 + Math.random() * 4000,
-    WBTC: 0.05 + Math.random() * 0.2,
-    SWTH: 10000 + Math.random() * 50000,
+    ETH: 2.5,
+    USDC: 3500,
+    USDT: 2800,
+    WBTC: 0.15,
+    SWTH: 35000,
   };
-  return balances[symbol] || Math.random() * 1000;
+  return balances[symbol] || 500;
 }

@@ -1,5 +1,3 @@
-// Import CSS so Vite handles HMR and production bundling
-import './style.css';
 import { formatCurrency, formatNumber, calculateToAmount, calculateTotalVolume, getMockBalance } from './lib/utils.js';
 
 // -------------------------------
