@@ -53,6 +53,12 @@ A modern, interactive currency swap interface built with vanilla JavaScript, fea
    ```
 
 4. **Preview production build**:
+5. **Run unit tests**:
+   ```bash
+   npm run test
+   # or watch mode
+   npm run test:watch
+   ```
    ```bash
    npm run preview
    ```
